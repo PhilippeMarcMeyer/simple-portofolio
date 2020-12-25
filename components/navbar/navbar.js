@@ -14,7 +14,7 @@ export default function NavbarMenu () {
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="ml-auto mr-4 font-weight-bold">
+                        <Nav className="ml-auto font-weight-bold">
                             <Link href="/">
                                 <Nav.Link as="home" href="/">
                                     Home

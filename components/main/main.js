@@ -26,7 +26,7 @@ export default function Main () {
                     </Col>
                     <Col md="6" className="text-center">
                         <div className="tengah-gambar">
-                            <img src={Profile} alt="Profile" width={400} height={400}/>
+                            <img src={Profile} alt="Profile" width={300} height={300}/>
                         </div>
                     </Col>
                 </Row>

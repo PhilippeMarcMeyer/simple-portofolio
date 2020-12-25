@@ -33,7 +33,7 @@ export default function Main () {
             </Container>
             <style jsx>{`
                 .tengah {
-                    margin-top: 17vh;
+                    margin-top: 15vh;
                     color: #757678;
                 }
                 .tengah-gambar {

@@ -9,7 +9,11 @@ export default function NavbarMenu () {
                 <Container>
                     <Navbar.Brand>
                         <div className="navtext">
-                            RKereh.
+                            <Link href="/">
+                                <Nav.Link as="home" href="/">
+                                    RKereh.
+                                </Nav.Link>
+                            </Link>
                         </div>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -23,6 +27,11 @@ export default function NavbarMenu () {
                             <Link href="/about">
                                 <Nav.Link as="about" href="/about">
                                     About
+                                </Nav.Link>
+                            </Link>
+                            <Link href="/projects">
+                                <Nav.Link as="projects" href="/projects">
+                                    My Projects
                                 </Nav.Link>
                             </Link>
                         </Nav>

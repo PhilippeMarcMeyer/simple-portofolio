@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 // components
 import Layout from "../components/layout";
-import About from "../components/about/about";
+import Projects from "../components/projects/projects";
 
 export default function index () {
     return (
@@ -10,7 +10,7 @@ export default function index () {
             <Layout title="My Portofolio | About">
                 {/* main */}
                 <div className="mb-5">
-                    <About/>
+                    <Projects/>
                 </div>
                 {/* end (main) */}
             </Layout>

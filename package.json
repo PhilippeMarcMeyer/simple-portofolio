@@ -12,6 +12,9 @@
   "author": "RKereh",
   "license": "ISC",
   "dependencies": {
+    "@octokit/core": "^3.2.4",
+    "@octokit/rest": "^18.0.12",
+    "axios": "^0.21.1",
     "bootstrap": "^4.5.3",
     "next": "^10.0.4",
     "next-images": "^1.6.2",

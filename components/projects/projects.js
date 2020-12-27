@@ -16,14 +16,7 @@ export default function Projects () {
     useEffect(() => {
         // get Followers
         async function getFollowers() {
-            const res = await Axios.get(url, {
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                    'username': 'kereh',
-                    'Access-Control-Allow-Origin': '*',
-                    'Authorization': 'token d4a4bfe83169e95da339a984e2e5e13cc693f8a8'
-                }
-            });
+            const res = await Axios.get(url);
             const dat = await res.data;
             setFollowers(dat);
         }
@@ -31,14 +24,7 @@ export default function Projects () {
 
         // getRepo
         async function getRepo() {
-            const res = await Axios.get(url, {
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                    'username': 'kereh',
-                    'Access-Control-Allow-Origin': '*',
-                    'Authorization': 'token d4a4bfe83169e95da339a984e2e5e13cc693f8a8'
-                }
-            });
+            const res = await Axios.get(url);
             const dat = await res.data;
             setRepo(dat);
         }
@@ -46,28 +32,14 @@ export default function Projects () {
 
         // getFollowing
         async function getFollowing() {
-            const res = await Axios.get(url, {
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                    'username': 'kereh',
-                    'Access-Control-Allow-Origin': '*',
-                    'Authorization': 'token d4a4bfe83169e95da339a984e2e5e13cc693f8a8'
-                }
-            });
+            const res = await Axios.get(url);
             const dat = await res.data;
             setFollowing(dat);
         }
         getFollowing();
 
         async function getRepos () {
-            const res = await Axios.get(urlRepo, {
-                headers: {
-                    'Accept': 'application/vnd.github.v3+json',
-                    'username': 'kereh',
-                    'Access-Control-Allow-Origin': '*',
-                    'Authorization': 'token d4a4bfe83169e95da339a984e2e5e13cc693f8a8'
-                }
-            });
+            const res = await Axios.get(urlRepo);
             const dat = await res.data;
             setRepoInfo(dat);
         }
@@ -128,11 +100,16 @@ export default function Projects () {
                                             return (
                                                 <Card className="mb-3">
                                                     <Card.Header>
-                                                        <h4>{data.name}</h4>
+                                                        <h4>{data.name} | Made With : <span className="badge badge-info text-white">{data.language}</span></h4>
                                                     </Card.Header>
                                                     <Card.Body>
                                                         <p>{data.description}</p>
                                                     </Card.Body>
+                                                    <Card.Footer>
+                                                        <a href={data.svn_url}>
+                                                            <div className="btn btn-success text-white">Go To Project</div>
+                                                        </a>
+                                                    </Card.Footer>
                                                 </Card>
                                             );
                                         })}

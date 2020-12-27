@@ -7,7 +7,7 @@ import Projects from "../components/projects/projects";
 export default function index () {
     return (
         <Fragment>
-            <Layout title="My Portofolio | About">
+            <Layout title="My Portofolio | Projects">
                 {/* main */}
                 <div className="mb-5">
                     <Projects/>

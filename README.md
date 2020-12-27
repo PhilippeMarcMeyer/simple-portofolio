@@ -1,7 +1,5 @@
 <h1 align="center">Welcome To My Simple Portofolio👋</h1>
 
-> 😋 A Simple Portofolio Made with NextJS 😋
-
 ### 🏠 [Homepage](https://github.com/kereh/simple-portofolio)
 
 ### ✨ [Demo](https://simple-portofolio.vercel.app/)
